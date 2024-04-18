@@ -71,6 +71,7 @@ class Card:
     notified: bool = False
     deleted_at: int = 0
     duedate: typing.Optional[str] = None
+    done: typing.Optional[str] = None
     description: typing.Optional[str] = None
     type: str = "plain"
     labels: typing.Optional[typing.List[Label]] = attr.Factory(list)
