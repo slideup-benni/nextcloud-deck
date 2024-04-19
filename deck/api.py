@@ -187,7 +187,6 @@ class NextCloudDeckAPI:
         order=999,
         description=None,
         duedate=None,
-        done=None,
     ):
         response = self.session.post(
             f"{self.url}/{board_id}/stacks/{stack_id}/cards",
@@ -197,7 +196,6 @@ class NextCloudDeckAPI:
                 "order": order,
                 "description": description,
                 "duedate": duedate,
-                "done": done,
             },
         )
         return response.json()
